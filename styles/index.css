@@ -1,0 +1,386 @@
+/* Importación de fuente de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* Selector universal: Condiciones basicas para iniciar a diseñar, se aplican a todo el proyecto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* Declaración de variables para facilitar uso durante todo el css */
+:root {
+    --primarycolor: #FFE142;
+    --backgroundcolor: #FFE142;
+    --backgroundmain: #FFF5F5;
+    --textcolor: #F2F1F2;
+    --tipography: "Roboto Condensed", sans-serif;
+}
+
+/* Inicio del body, queremos que ocupe el 100% de la pantalla */
+body {
+    /* Ancho del 100% de la pagina */
+    width: 100vw;
+    /* Alto auto ya que va a ser necesario scroll */
+    height: auto;
+    /* Propiedad para gestionar scroll en eje x*/
+    overflow-x: hidden;
+    /* Tipografia general para toda la pagina */
+    font-family: var(--tipography);
+    /* Color de letra para toda la pagina */
+
+}
+
+/* Caracteristicas para todo mi header (Barra de navegación y banner principal */
+header {
+    /* Quiero que mi header se vea en toda la pantalla cuando se ingrese a la pagina de inicio */
+    width: 100vw;
+    height: 100vh;
+    /* Color de fondo del header */
+    background-color: var(--backgroundcolor);
+}
+
+/* Caracterotiticas para espacio general de barra de navegación */
+.barraDeNavegacion {
+    /* Ancho de toda la pantalla */
+    width: 100vw;
+    /* Alto solo de 80px para que quede en la parte superior de la vista*/
+    height: 10%;
+    background-color: #D9D9D9;
+}
+
+/* Estilos del texto escrito dentro de barra de navegación */
+.elementosBarraDeNavegacion {
+    /* border: solid var(--primarycolor); */
+    /* Un ancho automtico para mejorar la responsividad de la pagina */
+    width: auto;
+    /* Un alto de 100% para ocupar todo mi espacio del container-navBar y sea aprovechado de mejor manera */
+    height: 100%;
+    /* Uso de display flex para organizar los elementos de manera horizontal y no vertical, adicional de las propedades siguientes para mejorar ubicación */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    /* Propeidad para que no tener viñetas de la lista de la barra de navegación */
+    list-style: none;
+    /* Propiedad de display flex para garantizar espacio entre los elementos del contenedor */
+    gap: 90px;
+
+}
+
+/* Modificación estilos texto con enlaces dentro de la barra de navegación  */
+a {
+    text-decoration: none;
+    /* font-size: 20px; */
+
+}
+
+/* Caracteristicas generales de todo el banner principa, foto, titulos, parrafo y boton */
+.Bannerprincipal {
+    /* border: solid red; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 100%; */
+    height: 87%;
+    /* margin-right: 60px;
+    margin-bottom: 10px; */
+    /* margin-right: 60px; */
+}
+
+/* Estilos de iconos de redes sociales */
+.iconosRedes {
+    border: solid purple;
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi {
+    font-size: 3em;
+
+
+}
+
+/* Caractersticas para todo el banner principal menos a foto */
+.Bannerprincipal1-1 {
+    /* border: solid blue; */
+    border-radius: 0px 0px 0px 50px;
+    background-color: var(--backgroundmain);
+    height: auto;
+    width: 55%;
+    /* padding: 20px; */
+    padding-left: 100px;
+    /* margin: 40px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.lineaDecoracionBannerPrincipal {
+    height: 50px;
+    width: 35%;
+    padding-top: 20px;
+}
+
+/* Modificación interna de bannerprincipal1-1 */
+.Bannerprincipal1-1 h1 {
+    /* border: solid blue; */
+    font-size: 8em;
+    /* padding: 100px; */
+}
+
+.Bannerprincipal1-1 h2 {
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+.flechaMovil {
+    display: flex;
+    margin-top: 20px;
+}
+
+.flechaBannerPrincipal {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.textoFlecha {
+    font-size: 200%;
+}
+
+.btn {
+    /* border: solid red; */
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: var(--backgroundcolor);
+    cursor: pointer;
+    margin-left: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border: solid var(--backgroundcolor);
+    background-color: var(--textcolor);
+}
+
+.Bannerprincipal1-2 {
+    /* border: solid blue; */
+    border-radius: 0px 0px 50px 0px;
+    background-color: var(--backgroundmain);
+    height: auto;
+    width: 35%;
+    position: relative;
+}
+
+/* Estilos imagen principal banner */
+.Bannerprincipal1-2 img {
+    /* border: solid red; */
+    border-radius: 50%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.w1 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    box-shadow: 10px 5px 5px #D9D9D9;
+}
+
+/* FIN DE EDICIÓN DEL HEADER ___________________________________________________________________________________________ */
+/* INICIO DE MODIFIACIÓN DEL MAIN____________________________________________________________________________________________ */
+.seccionDos {
+    border: solid yellow;
+    height: 100vh;
+    width: 99vw;
+    background-color: var(--backgroundmain);
+    position: relative;
+}
+
+/* Estilos de titulo de la sección 2 de la pagina de inicio */
+.encabezadoSeccion2 {
+    /* border: solid red; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* place-content: center; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    /* font-weight: bold; */
+    /* font-size: 6em; */
+    position: relative;
+}
+
+.primerTituloMain {
+    font-weight: bold;
+    font-size: 4em;
+    /* border: solid blue; */
+    grid-column-start: 0;
+    grid-column-end: 3;
+    /* position: absolute; */
+    /* left: 50%; */
+}
+
+.primerSubtituloMain {
+    /* font-weight: bold; */
+    /* border: solid blue; */
+    font-size: 2em;
+}
+
+.w2 {
+    /* border: solid red; */
+    /* width: 20px; */
+    position: absolute;
+    /* right: 60px; */
+    right: 5%;
+    box-shadow: 10px 5px 5px #D9D9D9;
+}
+
+.contenedoresPlanes {
+    height: 55%;
+    /* border: solid purple; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* justify-content: center; */
+    justify-items: center;
+    padding: 40px;
+
+    gap: 30px;
+
+
+}
+
+.cnt {
+    /* border: solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 10px 5px 5px #D9D9D9;
+    border-radius: 40px;
+    width: 200px;
+    height: 320px;
+}
+
+.emprendedores {
+    border: solid green;
+}
+
+.negocios {
+    border: solid green;
+}
+
+.corporativo {
+    border: solid green;
+}
+
+.ecommerce {
+    border: solid green;
+}
+
+.btn2 {
+    /* border: solid red; */
+    position: absolute;
+    width: 400px;
+    left: 20%;
+    bottom: 5%;
+    box-shadow: 10px 10px 10px black;
+}
+
+/* FIN DE SECCIÓN DOS DEL SITIO WEB PLANES________________________________________________________________________________ */
+/* INICIO DE FOOTER_____________________________________________- */
+footer {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    color: var(--textcolor);
+    display: grid;
+    grid-template-columns: 10% 90%;
+    text-align: center;
+}
+.iconosRedesFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.principalFooter {
+    border: solid purple;
+    /* border-bottom: var(--textcolor); */
+    width: auto;
+    /* display: flex; */
+}
+
+.encabezadoFooter {
+    border: solid green;
+    /* border-bottom: var(--textcolor); */
+    height: 50%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.encabezadoFooter h2{
+font-size: 2em;
+}
+.btn3{
+    box-shadow: 5px 2px 2px var(--backgroundcolor);
+    width: 250px;
+    position: absolute;
+    bottom: 10px;
+    left: 300px;
+}
+.inforacionDeContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.listadoContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+iframe{
+border: solid yellow;
+border-radius: 20px;
+margin-left: 200px;
+height: 100%;
+margin-top: 25px;
+}
+.seccionContacto5 {
+    /* border: solid white; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: auto;
+    font-size: 2em;
+    margin-top: 20px;
+    /* padding-top: 100px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
