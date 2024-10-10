@@ -70,6 +70,11 @@ header {
 
 }
 
+.logoEmpresarial {
+    height: 50px;
+    width: 50px;
+}
+
 /* Modificación estilos texto con enlaces dentro de la barra de navegación  */
 a {
     text-decoration: none;
@@ -92,7 +97,7 @@ a {
 
 /* Estilos de iconos de redes sociales */
 .iconosRedes {
-    border: solid purple;
+    /* border: solid purple; */
     display: flex;
     flex-direction: column;
     width: 6%;
@@ -101,10 +106,9 @@ a {
     align-items: center;
 }
 
+/* Modificación de estilos de todos los iconos traidos de bootstrap */
 .bi {
     font-size: 3em;
-
-
 }
 
 /* Caractersticas para todo el banner principal menos a foto */
@@ -157,7 +161,6 @@ a {
 
 .btn {
     /* border: solid red; */
-    margin-top: 20px;
     width: 200px;
     height: 60px;
     border-radius: 40px;
@@ -166,6 +169,7 @@ a {
     margin-left: 20%;
     font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .btn:hover {
@@ -198,9 +202,9 @@ a {
 }
 
 /* FIN DE EDICIÓN DEL HEADER ___________________________________________________________________________________________ */
-/* INICIO DE MODIFIACIÓN DEL MAIN____________________________________________________________________________________________ */
+/* INICIO DE MODIFIACIÓN DEL MAIN SECCIÓN 1____________________________________________________________________________________________ */
 .seccionDos {
-    border: solid yellow;
+    /* border: solid yellow; */
     height: 100vh;
     width: 99vw;
     background-color: var(--backgroundmain);
@@ -219,8 +223,8 @@ a {
     /* place-content: center; */
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    gap: 20px;
+    margin-top: 10px;
+    gap: 10px;
     /* font-weight: bold; */
     /* font-size: 6em; */
     position: relative;
@@ -262,7 +266,6 @@ a {
 
     gap: 30px;
 
-
 }
 
 .cnt {
@@ -275,24 +278,23 @@ a {
     background-color: #D9D9D9;
     box-shadow: 10px 5px 5px #D9D9D9;
     border-radius: 40px;
-    width: 200px;
+    width: 300px;
     height: 320px;
+    cursor: pointer;
+    color: black;
+    padding: 20px;
 }
 
-.emprendedores {
-    border: solid green;
+.cnt:hover {
+    border: solid var(--backgroundcolor);
+    background-color: var(--textcolor);
 }
-
-.negocios {
-    border: solid green;
-}
-
-.corporativo {
-    border: solid green;
-}
-
-.ecommerce {
-    border: solid green;
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .btn2 {
@@ -302,76 +304,122 @@ a {
     left: 20%;
     bottom: 5%;
     box-shadow: 10px 10px 10px black;
+    margin-bottom: 0px;
 }
 
-/* FIN DE SECCIÓN DOS DEL SITIO WEB PLANES________________________________________________________________________________ */
-/* INICIO DE FOOTER_____________________________________________- */
-footer {
-    background-color: black;
+/* FIN DE SECCIÓN UNO DE MAIN DEL SITIO WEB PLANES________________________________________________________________________________ */
+/* INICIO DE EDICIÓN DE SECCIÓN 2 DEL MAIN, CARRUSEL DE PROYECTOS */
+.contenedorCarrusel {
     width: 100vw;
     height: 100vh;
-    color: var(--textcolor);
+    overflow: hidden;
+    background-color: var(--backgroundcolor);
+    /* position: relative; */
+}
+
+.conoceNuestrosProyectos {
+    /* display: flex; */
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.carrusel {
+    /* border: solid orange; */
+    /* margin: auto; */
+    overflow: hidden;
+    /* width: 100vw;
+    height: 100vh; */
+    /* padding: 100px; */
+    padding: 40px;
+    /* position: absolute; */
+    /* bottom: 0.5px; */
+}
+
+/* FIN DE EDICIÓN DE SECCIÓN 2 DEL MAIN CARRUSEL DE PROYECTOS */
+/* INICIO DE FOOTER_____________________________________________- */
+footer {
+    background-color: var(--textcolor);
+    width: 100vw;
+    height: 100vh;
+    color: black;
     display: grid;
     grid-template-columns: 10% 90%;
     text-align: center;
 }
-.iconosRedesFooter{
+
+/* EDICIÓN ICONOS COSTADO IZQUIERDO FOOTER */
+.iconosRedesFooter {
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
     align-items: center;
- 
+
 }
+
+/* Edición del contenedor principal del footer */
 .principalFooter {
-    border: solid purple;
+    /* border: solid purple; */
     /* border-bottom: var(--textcolor); */
     width: auto;
     /* display: flex; */
 }
 
+/* Edición de titulo, subtitulo y boton del footer */
 .encabezadoFooter {
-    border: solid green;
+    /* border: solid green; */
     /* border-bottom: var(--textcolor); */
     height: 50%;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
+    /* justify-content: center;
+    place-content: center; */
     position: relative;
-    
+    border-bottom: solid var(--backgroundcolor)
 }
 
-.encabezadoFooter h2{
-font-size: 2em;
+.encabezadoFooter h2 {
+    font-size: 2em;
 }
-.btn3{
+
+.btn3 {
     box-shadow: 5px 2px 2px var(--backgroundcolor);
     width: 250px;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     left: 300px;
 }
-.inforacionDeContacto{
+
+/* Edición de la sección 3 del footer donde esta la información de contacto */
+.inforacionDeContacto {
     display: flex;
+    padding-top: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    border-bottom: solid var(--backgroundcolor);
 }
-.listadoContacto{
+
+.listadoContacto {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-iframe{
-border: solid yellow;
-border-radius: 20px;
-margin-left: 200px;
-height: 100%;
-margin-top: 25px;
+
+/* Edición de sección 4 del footer donde esta el mapa de maps */
+iframe {
+    /* border: solid yellow; */
+    border-radius: 20px;
+    margin-left: 200px;
+    height: 100%;
+    margin-top: 25px;
 }
+
+/* Edición de la ultima sección del footer datos de copyright */
 .seccionContacto5 {
     /* border: solid white; */
     grid-column-start: 1;
@@ -383,4 +431,159 @@ margin-top: 25px;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* FIN DE EDICIÓN TOTAL DE LA PAGINA___________________________________________________ */
+/* EDICIÓN RESPONSIVE */
+@media screen  and (max-width: 1024px) {
+
+    /* INICIO EDICIÓN HEADER */
+    header {
+        width: 50vw;
+        height: auto;
+    }
+
+    /* INICIO EDICIÓN BARRA DE NAVEGACIÓN */
+    .barraDeNavegacion {
+        /* Ancho de toda la pantalla */
+        width: 50vw;
+        /* Alto solo de 80px para que quede en la parte superior de la vista*/
+        height: auto;
+        background-color: #D9D9D9;
+    }
+
+    .elementosBarraDeNavegacion {
+        width: 50vw;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    /* FIN EDICIÓN BARRA DE NAVEGACIÓN */
+    /* INICIO DE EDICIÓN BANNER PRINCIPAL */
+    .Bannerprincipal {
+        /* border: solid red; */
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 50vw;
+        height: auto;
+        /* margin-right: 60px;
+    margin-bottom: 10px; */
+        /* margin-right: 60px; */
+    }
+
+    .iconosRedes {
+        display: none;
+    }
+
+    .Bannerprincipal1-2 {
+        display: none;
+    }
+
+    .bi {
+        font-size: 1em;
+    }
+
+    .Bannerprincipal1-1 {
+        /* border: solid blue; */
+        border-radius: 20px 20px 20px 20px;
+        background-color: var(--backgroundmain);
+        height: auto;
+        width: 100vw;
+        /* padding: 20px; */
+        padding-left: 20px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .lineaDecoracionBannerPrincipal {
+        height: 30px;
+        width: 25%;
+        padding-top: 20px;
+    }
+
+    .Bannerprincipal1-1 h1 {
+        /* border: solid blue; */
+        font-size: 2em;
+    }
+
+    .Bannerprincipal1-1 h2 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .flechaBannerPrincipal {
+        width: 60px;
+    }
+
+    .textoFlecha {
+        font-size: 100%;
+    }
+
+    .btn {
+        /* border: solid red; */
+        width: 100px;
+        height: 30px;
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* FIN DE EDICIÓN DE HEADER */
+    /* INICIO DE EDICIÓN DE MAIN */
+    /* EDICIÓN SECCIÓN 1 DEL MAIN PLANES */
+    .seccionDos {
+        width: 50vw;
+        height: auto;
+    }
+    .primerTituloMain {
+        font-size: 2em;
+    }
+
+    .primerSubtituloMain {
+        font-size: 1em;
+    }
+    .contenedoresPlanes {
+        /* border: solid purple; */
+        display: grid;
+        grid-template-columns: 1fr;
+        /* justify-content: center; */
+        padding: 20px;
+    }
+    .btn2 {
+        /* border: solid red; */
+        width: 200px;
+        box-shadow: 10px 10px 10px black;
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+    }
+    .w2{
+        display: none;
+    }
+    /* FIN SECCIÓN 1 DEL MAIN */
+    .contenedorCarrusel {
+        width: 50vw;
+        height: auto;
+    }
+    .carrusel{
+        width: auto;
+    }
+    .conoceNuestrosProyectos {
+        /* display: flex; */
+        text-align: center;
+    
+        margin-top: 20px;
+    }
+/* FIN DE SECCIÓN 2 DEL MAIN_________________________________ */
+/* FIN DE MAIN___________________________________________ */
+/* INICIO FOOTER____________________________________________ */
+
+    @media screen and (max-width: 767px) {}
+
+
 }
