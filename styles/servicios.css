@@ -1,0 +1,361 @@
+/* Importación de fuente de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+:root {
+    --primarycolor: #FFE142;
+    --backgroundcolor: #FFE142;
+    --backgroundmain: #FFF5F5;
+    --textcolor: #F2F1F2;
+    --tipography: "Roboto Condensed", sans-serif;
+}
+body {
+    /* Ancho del 100% de la pagina */
+    width: 100vw;
+    /* Alto auto ya que va a ser necesario scroll */
+    height: auto;
+    /* Propiedad para gestionar scroll en eje x*/
+    overflow-x: hidden;
+    /* Tipografia general para toda la pagina */
+    font-family: var(--tipography);
+    /* Color de letra para toda la pagina */
+
+}
+header {
+    border: solid yellow;
+    /* Quiero que mi header se vea en toda la pantalla cuando se ingrese a la pagina de inicio */
+    width: 100vw;
+    height: 100vh;
+    /* Color de fondo del header */
+    background-color: var(--backgroundcolor);
+    border-radius: 10%;
+}
+/* Caracterotiticas para espacio general de barra de navegación */
+.barraDeNavegacion {
+    /* Ancho de toda la pantalla */
+    width: 100vw;
+    /* Alto solo de 80px para que quede en la parte superior de la vista*/
+    height: 10%;
+    background-color: #D9D9D9;
+}
+
+/* Estilos del texto escrito dentro de barra de navegación */
+.elementosBarraDeNavegacion {
+    /* border: solid var(--primarycolor); */
+    /* Un ancho automtico para mejorar la responsividad de la pagina */
+    width: auto;
+    /* Un alto de 100% para ocupar todo mi espacio del container-navBar y sea aprovechado de mejor manera */
+    height: 100%;
+    /* Uso de display flex para organizar los elementos de manera horizontal y no vertical, adicional de las propedades siguientes para mejorar ubicación */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    /* Propeidad para que no tener viñetas de la lista de la barra de navegación */
+    list-style: none;
+    /* Propiedad de display flex para garantizar espacio entre los elementos del contenedor */
+    gap: 90px;
+
+}
+
+.logoEmpresarial {
+    height: 50px;
+    width: 50px;
+}
+
+/* Modificación estilos texto con enlaces dentro de la barra de navegación  */
+a {
+    text-decoration: none;
+    /* font-size: 20px; */
+
+}
+
+header h2{
+margin-top: 20px;
+text-align: center;
+font-size: 2em;
+}
+.seccion1Servicios{
+    border: solid black;
+    display: flex;
+    margin: 3%;
+    padding: 5%;
+    gap: 40px;
+    justify-content: center;
+    background-color: var(--textcolor);
+    /* border-radius: 40px; */
+    box-shadow: 10px 5px 5px #D9D9D9;
+
+}
+.seccion1Servicios img {
+    width: 50px;
+}
+.seccion1Servicios div{
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    padding: 50px;
+    border-radius:20px ;
+    /* width: 200px; */
+    box-shadow: 10px 5px 5px #D9D9D9;
+}
+header h3{
+    /* border: solid rebeccapurple; */
+    text-align: center;
+    font-size: 1.3em;
+}
+.btn{
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: black;
+    cursor: pointer;
+    color: var(--textcolor);
+    margin-left: 43.5%;
+    font-size: 1em;
+    /* font-weight: bold; */
+    /* margin-bottom: 10px; */
+}
+.btn:hover {
+    border: solid var(--backgroundcolor);
+    background-color: var(--textcolor);
+    color: black;
+}
+/* INICIO DE MAIN */
+main{
+    width: 100vw;
+    height: 100vh;
+}
+main h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.debeProyectos{
+    /* border: solid red; */
+    display: flex;
+    margin: 3%;
+    padding: 1%;
+    gap: 40px;
+    height: 70%;
+    /* justify-content: center; */
+}
+.debeProyectos div{
+    text-align: center;
+    height: 100%;
+    border: solid black;
+    box-shadow: 10px 5px 5px #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--textcolor);
+    border-radius: 20px;
+}
+.debeProyectos h3{
+    background-color: rgba(0, 0, 0, 0.697);
+}
+.debeProyectos p{
+    background-color: rgba(0, 0, 0, 0.697);
+    padding: 10px;
+}
+.uno{
+   background-image: url(../assets/imgResponsive.png); 
+}
+.dos{
+    background-image: url(../assets/imgSeguridad.png);
+}
+.tres{
+background-image: url(../assets/imgIntegraciones.png);
+}
+.cuatro{
+background-image: url(../assets/imgUxUi.png);
+}
+main h4{
+    width: 800px;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: var(--textcolor);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px #D9D9D9;
+    padding: 10px;
+}
+/* INICIO DE FOOTER */
+footer {
+    background-color: var(--textcolor);
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    text-align: center;
+}
+/* EDICIÓN ICONOS COSTADO IZQUIERDO FOOTER */
+.iconosRedesFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Edición del contenedor principal del footer */
+.principalFooter {
+    /* border: solid purple; */
+    /* border-bottom: var(--textcolor); */
+    width: auto;
+    /* display: flex; */
+}
+
+/* Edición de titulo, subtitulo y boton del footer */
+.encabezadoFooter {
+    /* border: solid green; */
+    /* border-bottom: var(--textcolor); */
+    height: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center;
+    place-content: center; */
+    position: relative;
+    border-bottom: solid var(--backgroundcolor)
+}
+
+.encabezadoFooter h2 {
+    font-size: 2em;
+}
+
+.btn3 {
+    box-shadow: 5px 2px 2px var(--backgroundcolor);
+    width: 250px;
+    position: absolute;
+    bottom: 40px;
+    left: 300px;
+}
+
+/* Edición de la sección 3 del footer donde esta la información de contacto */
+.inforacionDeContacto {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-bottom: solid var(--backgroundcolor);
+}
+
+.listadoContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Edición de sección 4 del footer donde esta el mapa de maps */
+iframe {
+    /* border: solid yellow; */
+    border-radius: 20px;
+    margin-left: 200px;
+    height: 100%;
+    margin-top: 25px;
+}
+
+/* Edición de la ultima sección del footer datos de copyright */
+.seccionContacto5 {
+    /* border: solid white; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: auto;
+    font-size: 2em;
+    margin-top: 20px;
+    /* padding-top: 100px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media screen  and (max-width: 1024px) {
+    header {
+        width: 100vw;
+        height: auto;
+    }
+
+    /* INICIO EDICIÓN BARRA DE NAVEGACIÓN */
+    .barraDeNavegacion {
+        /* Ancho de toda la pantalla */
+        width: 100vw;
+        /* Alto solo de 80px para que quede en la parte superior de la vista*/
+        height: auto;
+        background-color: #D9D9D9;
+    }
+
+    .elementosBarraDeNavegacion {
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .seccion1Servicios{
+        /* height: 100vw; */
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+        padding: 2%;
+    }
+    main{
+        width: 100vw;
+    }
+    .debeProyectos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* INICIO FOOTER */
+    footer {
+        background-color: var(--textcolor);
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .iconosRedesFooter{
+        display: none;
+    }
+    .principalFooter{
+        width: 100vw;
+    }
+    .encabezadoFooter{
+        height: auto;
+    }
+    .encabezadoFooter h3 {
+        font-size: 0.8em;
+    }
+    .encabezadoFooter h2 {
+        font-size: 1em;
+    }
+    .btn3 {
+        width: 250px;
+        height: 25px;
+        position: absolute;
+        bottom: 20px;
+        left: 110px;
+    }
+    .inforacionDeContacto {
+        width: 100vw;
+        display: flex;
+        padding-top: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    iframe{
+        margin-left: 10px;
+    }
+    .seccionContacto5{
+        font-size: 1em;
+    }
+}
