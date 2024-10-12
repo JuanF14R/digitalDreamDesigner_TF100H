@@ -301,20 +301,29 @@ iframe {
     }
     .seccion1Servicios{
         /* height: 100vw; */
-        width: 100vw;
+        width: 98vw;
         display: flex;
         flex-direction: column;
         margin: 1%;
         padding: 2%;
     }
+    .btn{
+        margin-left: 37%;
+    }
+    }
     main{
         width: 100vw;
+        /* border: solid red; */
     }
     .debeProyectos{
         display: flex;
         flex-direction: column;
+        width: 98vw;
     }
-
+    main h4{
+        width: auto;
+        margin-left: 0%;
+    }
     /* INICIO FOOTER */
     footer {
         background-color: var(--textcolor);
@@ -328,9 +337,11 @@ iframe {
     }
     .principalFooter{
         width: 100vw;
+        /* height: auto; */
     }
     .encabezadoFooter{
         height: auto;
+        padding: 60px;
     }
     .encabezadoFooter h3 {
         font-size: 0.8em;
@@ -343,7 +354,7 @@ iframe {
         height: 25px;
         position: absolute;
         bottom: 20px;
-        left: 110px;
+        left: -30px;
     }
     .inforacionDeContacto {
         width: 100vw;
@@ -357,5 +368,10 @@ iframe {
     }
     .seccionContacto5{
         font-size: 1em;
+        width: 100vw;
     }
-}
+    @media screen  and (max-width: 767px) {
+        .btn{
+            margin-left: 25%;
+        }
+    }
