@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --background: black;
+  --orange: #EBD238;
+  --colorTitle: #EBD238;
+  --colorText: white;
+
+}
+body{
+  overflow-x: hidden;
+}
+.row {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+
+/* ================= Headlines and Paragraphs ================= */
+
+
+h1 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--colorTitle);
+}
+
+
+p {
+  margin: 2rem 0;
+  color: var(--colorText);
+}
+
+/* ================= Animacion boton ================= */
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4.2rem;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--orange);
+  font-weight: 400;
+  color: var(--colorText);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  background: var(--colorTitle);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.btn:hover::after,
+.btn:focus::after {
+  right: 0;
+  background: var(--orange);
+}
+
+.btn--orange {
+  background: var(--orange);
+  transition: all 0.2s;
+}
+
+.btn--orange::after {
+  display: none;
+}
+
+.btn--orange:hover,
+.btn--orange:focus {
+  background: transparent;
+}
+
+/* ================= HEADER ================= */
+
+
+.header {
+  background: var(--background);
+  height: 100vh;
+  width: 100vw;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* ========================================= FLECHA ================================================== */
+nav{
+  background: transparent;
+  width: 6rem;
+  position: fixed;
+}
+.flecha-enlace {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.flecha-izquierda {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 3rem;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid var(--orange); /* Color de la flecha */
+}
+
+.flecha-enlace:hover .flecha-izquierda {
+  border-right-color: #766701; /* Cambia el color de la flecha al pasar el ratón por encima */
+}
+
+.header__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__text p {
+  margin: 1.rem 0 3.5rem;
+  max-width: 700px;
+  font-family: 'Jost', sans-serif;
+  font-size: 2.5rem;
+}
+
+/* ========================== MAIN ========================== */
+
+.contentSection {
+  width: 80vw;
+  /* centrar un contenedor */
+  margin: 80px auto;
+}
+
+.title {
+  color: var(--primaryColor);
+  /* tamaño de fuente */
+  font-size: 50px;
+  /* centrar texto */
+  text-align: center;
+  /* margen abajo */
+  margin-bottom: 30px;
+}
+
+.container {
+  /* hereda el ancho del papa (section) */
+  width: 100%;
+  /* caja flexible */
+  display: flex;
+  /* centrar los elementos */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container img {
+  width: 40%;
+  border-radius: 35px;
+}
+
+.container p {
+  width: 60%;
+  color: var(--textColor);
+  font-size: 28px;
+  /* alinacion de texto */
+  text-align: justify;
+  text-align: center;
+  /* distacia entre lineas de texto */
+  line-height: 30px;
+  /* para el espacio entre letras */
+  letter-spacing: 1.5px;
+}
+
+/* ============================= FOOTER ============================= */
+footer {
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: auto;
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 10% 90%;
+  text-align: center;
+}
+
+
+
+/* Edición de la ultima sección del footer datos de copyright */
+.seccionContacto5 {
+  /* border: solid white; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: auto;
+  font-size: 2em;
+  margin-top: 20px;
+  /* padding-top: 100px; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* ============================================ MOBILE ===================================================================== */
+
+@media screen and (max-width: 767px){
+  body{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 56px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+
+  .header {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .header__text {
+    position: relative;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .header__text p {
+    margin: .5rem .5rem 2rem;
+    max-width: 767px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    position: relative;
+    display: inline-block;
+    flex-basis: 0%;
+    padding: .5rem .5rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--orange);
+    font-weight: 50px;
+    font-size: 50px;
+    color: var(--colorText);
+  }
+
+  .contentSection {
+    width: 80vw;
+    /* centrar un contenedor */
+    margin: 30px  ;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container img {
+    width: 132.7%;
+    border-radius: 0%;
+  }
+
+  .container p {
+    width: 100%;
+    font-size: 30px;
+    /* alinacion de texto */
+    /* text-align: justify; */
+    text-align: center;
+    /* distacia entre lineas de texto */
+    line-height: 35px;
+    /* para el espacio entre letras */
+    letter-spacing: 1.1px;
+  }
+
+  .seccionContacto5 {
+    font-size: 1.5em;
+  }
+}
+
+/* ============================================= TABLETS ===================================================================== */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container img {
+    width: 80%;
+    border-radius: 50%;
+  }
+
+  .container p {
+    width: 100%;
+    font-size: 40px;
+    /* alinacion de texto */
+    /* text-align: justify; */
+    text-align: center;
+    /* distacia entre lineas de texto */
+    line-height: 38px;
+    /* para el espacio entre letras */
+    letter-spacing: 1.3px;
+  }
+}
