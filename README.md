@@ -29,8 +29,7 @@ Diseño Responsive 📱:
 - El sitio se adapta a diferentes dispositivos y resoluciones, optimizando la experiencia tanto en móvil como en escritorio.
 ## Mockups diseños previos.
 Para la parte del diseño previo se hace uso de la herramienta Figma para recolectar ideas, diseñar, y modelar como se evidencia el maquetado inicial de la pagina de inicio:
-<img class="lineaDecoracionBannerPrincipal" src="./assets/mockupsInicio.png"
-                    alt="linea decoracion bannerprincipal">
+<img src="./assets/mockupsInicio.png" alt="mockups iniciales">
 ## Futuras Mejoras 🚀
 - Integración con una base de datos para gestionar usuarios 📊.
 - Pasarelas de pago para comprar los servicios directamente en el sitio 💳.
