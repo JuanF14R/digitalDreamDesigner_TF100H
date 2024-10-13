@@ -5,11 +5,35 @@
 <hr>
 <p>Para la creación de este sitio web estamos unidos en un equipo de trabajo conformado por Jose Luis Mariño y Juan Felipe Roriguez, desarrolladores web FullStack en proceso. Para ello hacemos uso de las tecnologias aprendidas durante las primeras horas del curso, principalmente enfocados en html, css y JavaScript; adicional apoyados de Bootstrap. Logrando así, poner en practica los conceptos y bases del desarrollo web aprendidas durante el bootcamp en la academia de programación Bit y con la asesoria de la docente Luisa Castaño. Nuestro sitio web se encuentra dividido de la siguiente manera:</p>
 <hr>
-<ol>
-    <li>Header inicial que agrupa tanto barra de navegación como banner principal</li>
-    <hr>
-        <ul>
-            <li>Dentro de la barra de navegación se hace uso de etiqueta anchore para enlazar dentro de la misma pagina las diferentes secciones y asi facilitar la navegación y experiencia de usuario.</li>
-            <li>A su vez se utilizala etiqueta display flex para facilitar la organización en todo el header, tanto para la sección de barra de navegación como en la sección de portada, facilitando la correcta distribución y separación de elementos. </li>  
-            <li>Para la sección de portada se ubica un botón de llamado a la acción haciendo uso de la etiqueta anchore  que le permite al usuasrio enlazar directamente a nuestro chat de whatsapp y así aumentar las probabilidades de un posible contanto. </li>
-        </ul>
+## Tecnologías Utilizadas 🛠️
+- HTML5: Estructura del contenido y las páginas 🌐
+- CSS3: Estilos y diseño visual 🎨
+- JavaScript: Interactividad y validación de formularios ⚙️
+
+## Características Principales 🌟
+Página de Inicio 🏠:
+
+- Introducción a los servicios con un diseño moderno y claro.
+- Menú de navegación intuitivo con enlaces a las secciones principales.
+
+Página de Servicios 💼:
+
+- Lista detallada de los servicios ofrecidos con descripciones y precios 💲.
+
+Formulario de Contacto ✉️:
+
+- Formulario validado con JavaScript para que los usuarios puedan enviar mensajes o solicitudes 📩.
+
+Diseño Responsive 📱:
+
+- El sitio se adapta a diferentes dispositivos y resoluciones, optimizando la experiencia tanto en móvil como en escritorio.
+
+## Futuras Mejoras 🚀
+- Integración con una base de datos para gestionar usuarios 📊.
+- Pasarelas de pago para comprar los servicios directamente en el sitio 💳.
+- Optimización SEO para mejorar la visibilidad en motores de búsqueda 🔍.
+- Mejora del formulario de contacto para agregar adjuntos o respuestas automáticas 📤.
+
+## Autores 👥
+- Juan Fleipe Rodriguez - Scrum Master
+- Jose Luis Mariño - Desarrollo Frontend y diseño de interfaz.
