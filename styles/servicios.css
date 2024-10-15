@@ -108,7 +108,8 @@ header h3{
     text-align: center;
     font-size: 1.3em;
 }
-.btn{
+.btn1{
+    /* border: solid red; */
     justify-content: center;
     width: 200px;
     height: 30px;
@@ -116,12 +117,12 @@ header h3{
     background-color: black;
     cursor: pointer;
     color: var(--textcolor);
-    margin-left: 43.5%;
+    margin-left: 697px;
     font-size: 1em;
     /* font-weight: bold; */
     /* margin-bottom: 10px; */
 }
-.btn:hover {
+.btn1:hover {
     border: solid var(--backgroundcolor);
     background-color: var(--textcolor);
     color: black;
@@ -137,9 +138,11 @@ main h2{
 }
 .debeProyectos{
     /* border: solid red; */
+    /* display: flex;
+    flex-direction: row; */
+    margin: 0.5%;
     display: flex;
-    /* flex-direction: column; */
-    margin: 3%;
+    width: 10%;
     padding: 1%;
     gap: 40px;
     height: 70%;
@@ -233,6 +236,7 @@ footer {
 }
 
 .btn3 {
+    /* border: solid red; */
     box-shadow: 5px 2px 2px var(--backgroundcolor);
     width: 250px;
     position: absolute;
@@ -279,7 +283,7 @@ iframe {
     align-items: center;
     text-align: center;
 }
-@media screen  and (max-width: 1024px) {
+@media screen and  (max-width: 1024px) {
     header {
         width: 100vw;
         height: auto;
@@ -308,22 +312,31 @@ iframe {
         margin: 1%;
         padding: 2%;
     }
-    .btn{
-        margin-left: 37%;
+    .btn1{
+        margin-left: 90px;
     }
     }
     main{
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         /* border: solid red; */
+    }
+    main h2{
+        width: 70%;
     }
     .debeProyectos{
         display: flex;
         flex-direction: column;
-        width: 98vw;
+        width: 70%;;
     }
     main h4{
-        width: auto;
+        /* border: solid red; */
+        width: 70%;
         margin-left: 0%;
+        margin-top: 20px;
     }
     /* INICIO FOOTER */
     footer {
@@ -337,7 +350,7 @@ iframe {
         display: none;
     }
     .principalFooter{
-        width: 100vw;
+        width: 100%;
         /* height: auto; */
     }
     .encabezadoFooter{
@@ -358,8 +371,8 @@ iframe {
         left: -30px;
     }
     .inforacionDeContacto {
-        width: 100vw;
-        display: flex;
+        /* width: 80%; */
+        padding-left: 50px;
         padding-top: 10px;
         flex-direction: column;
         gap: 20px;
@@ -368,11 +381,13 @@ iframe {
         margin-left: 10px;
     }
     .seccionContacto5{
+        /* border: solid red; */
         font-size: 1em;
-        width: 100vw;
+        /* width: 70%; */
+        /* padding-left: 60px; */
     }
-    @media screen  and (max-width: 767px) {
+    @media screen  and (min-width: 767px) {
         .btn{
-            margin-left: 25%;
+            /* margin-left: 25%; */
         }
     }
